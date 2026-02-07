@@ -158,6 +158,143 @@ h3{
   border-color:#8b0000;
   color:#fff;
 }
+/* ================= TAKESHI'S CASTLE SPECIAL ================= */
+
+.takeshi-wrapper{
+  position:relative;
+  margin:120px auto;
+  max-width:1100px;
+  padding:70px 30px;
+  border-left:6px solid #8b0000;
+  border-radius:22px;
+  background:
+    linear-gradient(135deg, rgba(139,0,0,0.25), rgba(0,0,0,0.95));
+  box-shadow:0 0 45px rgba(139,0,0,0.5);
+  overflow:hidden;
+}
+
+/* DARK OVERLAY */
+.takeshi-overlay{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at top right, rgba(139,0,0,0.4), transparent 60%);
+  pointer-events:none;
+}
+
+/* CONTENT */
+.takeshi-content{
+  position:relative;
+  z-index:2;
+}
+
+/* TITLES */
+.takeshi-title{
+  text-align:center;
+  color:#d4af37;
+  letter-spacing:6px;
+  margin-bottom:10px;
+}
+
+.takeshi-subtitle{
+  text-align:center;
+  color:#8b0000;
+  letter-spacing:3px;
+  font-size:13px;
+  margin-bottom:50px;
+}
+
+/* GRID */
+.takeshi-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+/* LEFT TEXT */
+.takeshi-text p{
+  color:#cccccc;
+  font-size:16px;
+  line-height:1.8;
+}
+
+.takeshi-line{
+  font-size:17px;
+  margin-bottom:18px;
+}
+
+.takeshi-highlight{
+  margin-top:30px;
+  color:#d4af37;
+  letter-spacing:2px;
+  font-size:15px;
+}
+
+/* RIGHT MYSTERY BOX */
+.takeshi-mystery{
+  background:rgba(0,0,0,0.7);
+  border:2px dashed #8b0000;
+  border-radius:16px;
+  padding:30px;
+  text-align:center;
+}
+
+.mystery-title{
+  color:#d4af37;
+  letter-spacing:2px;
+  margin-bottom:18px;
+}
+
+.mystery-text{
+  color:#cccccc;
+  line-height:1.7;
+  font-size:14px;
+}
+
+.mystery-footer{
+  margin-top:22px;
+  color:#8b0000;
+  letter-spacing:2px;
+  font-size:13px;
+}
+
+/* CTA */
+.takeshi-cta{
+  text-align:center;
+  margin-top:50px;
+}
+
+/* ================= MOBILE OPTIMIZATION ================= */
+@media(max-width:768px){
+
+  .takeshi-wrapper{
+    padding:50px 20px;
+    margin:80px 15px;
+  }
+
+  .takeshi-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .takeshi-title{
+    font-size:22px;
+    letter-spacing:4px;
+  }
+
+  .takeshi-subtitle{
+    font-size:12px;
+    margin-bottom:35px;
+  }
+
+  .takeshi-text p{
+    font-size:15px;
+  }
+
+  .takeshi-highlight{
+    font-size:14px;
+  }
+}
 
 
 </style>
@@ -279,54 +416,222 @@ h3{
 </div>
 
 
-  <div id="gridspark" class="event-box">
-    <div class="event-title">GridSpark</div>
-    <div class="event-content">
-      Details will be updated soon.
-      <a href="registration.html" class="register-btn">
-  Register Now
-</a>
+ <div id="gridspark" class="event-box">
+  <div class="event-title">GRIDSPARK</div>
 
-    </div>
+  <div class="event-content">
+
+    <h4>Power Systems & Electrical Concepts Event</h4>
+
+    <p class="event-tagline">
+      Power the grid.<br>
+      Spark your knowledge.
+    </p>
+
+    <p>
+      GridSpark is a technical event focused on testing participants’
+      understanding of power systems and core electrical engineering concepts.
+      The event encourages analytical thinking, problem-solving skills,
+      and conceptual clarity under time constraints.
+    </p>
+
+    <p>
+      Participants will be challenged with tasks related to electrical networks,
+      power generation, transmission, distribution, and system behavior,
+      requiring both theoretical knowledge and practical reasoning.
+    </p>
+
+    <h5>General Rules</h5>
+    <ul>
+      <li>Participation may be individual or in teams, as announced on the event day.</li>
+      <li>Questions and tasks will be based on power systems and electrical fundamentals.</li>
+      <li>Participants must complete the tasks within the allotted time.</li>
+      <li>Use of mobile phones or external reference materials is not permitted.</li>
+      <li>Evaluation will be based on accuracy, clarity, and time efficiency.</li>
+      <li>The decision of the event coordinators will be final.</li>
+    </ul>
+
+    <!-- REGISTER BUTTON -->
+    <a href="registration.html" class="register-btn">
+      Register Now
+    </a>
+
   </div>
+</div>
 
-  <div id="electroscavengers" class="event-box">
-    <div class="event-title">Electro Scavengers</div>
-    <div class="event-content">
-      Details will be updated soon.
-      <a href="registration.html" class="register-btn">
-  Register Now
-</a>
 
-    </div>
+  <div id="electroscavenger" class="event-box">
+  <div class="event-title">ELECTRO SCAVENGERS</div>
+
+  <div class="event-content">
+
+    <h4>Component Identification & Problem-Solving Event</h4>
+
+    <p class="event-tagline">
+      Find it fast.<br>
+      Think electrical.
+    </p>
+
+    <p>
+      Electro Scavengers is a technical event designed to test participants’
+      fundamental knowledge of electrical and electronic components along
+      with their ability to identify, analyze, and apply concepts under time pressure.
+    </p>
+
+    <p>
+      The event challenges participants to work efficiently, observe carefully,
+      and solve problems using core electrical engineering principles.
+    </p>
+
+    <h5>General Rules</h5>
+    <ul>
+      <li>Participation may be individual or in teams, as announced on the event day.</li>
+      <li>Tasks will be based on basic electrical and electronic components.</li>
+      <li>Participants must complete the assigned tasks within the given time.</li>
+      <li>Use of mobile phones or external assistance is not permitted.</li>
+      <li>Evaluation will be based on accuracy and time efficiency.</li>
+      <li>The decision of the event coordinators will be final.</li>
+    </ul>
+
+    <!-- REGISTER BUTTON -->
+    <a href="registration.html" class="register-btn">
+      Register Now
+    </a>
+
   </div>
+</div>
+
 
   <div id="techgamble" class="event-box">
-    <div class="event-title">Tech Gamble</div>
-    <div class="event-content">
-      Details will be updated soon.
-      <a href="registration.html" class="register-btn">
-  Register Now
-</a>
+  <div class="event-title">TECH GAMBLE</div>
 
-    </div>
+  <div class="event-content">
+
+    <h4>Technical Quiz & Strategy Event</h4>
+
+    <p class="event-tagline">
+      Take the risk.<br>
+      Test your technical instinct.
+    </p>
+
+    <p>
+      Tech Gamble is a points-based technical event that tests participants’
+      technical knowledge, decision-making ability, and strategic thinking.
+      The event combines a technical quiz with a high-risk, high-reward
+      gambling-style round, making it both challenging and exciting.
+    </p>
+
+    <h5>General Rules</h5>
+    <ul>
+      <li>Participation is allowed as an individual or as a team of 2.</li>
+      <li>This is a points-based technical event.</li>
+      <li>Use of mobile phones or any unfair means is strictly prohibited.</li>
+      <li>Any violation of rules will result in immediate disqualification.</li>
+      <li>The decision of the event coordinators will be final and binding.</li>
+    </ul>
+
+    <h5>Event Format</h5>
+
+    <h6>Round 1 – Tech Quiz</h6>
+    <ul>
+      <li>Participants will face a technical quiz.</li>
+      <li>Each correct answer earns points.</li>
+      <li>No negative marking in this round.</li>
+      <li>
+        Based on the total score, the top 10 participants/teams will qualify
+        for the next round.
+      </li>
+    </ul>
+
+    <h6>Round 2 – LET’S GAMBLE</h6>
+    <!-- ATTENTION PHASE -->
+<div style="
+  margin:40px 0;
+  padding:25px 20px;
+  border:2px dashed #d4af37;
+  border-radius:14px;
+  background:rgba(139,0,0,0.15);
+  text-align:center;
+">
+
+  <h5 style="
+    color:#d4af37;
+    letter-spacing:4px;
+    font-size:22px;
+    margin-bottom:15px;
+  ">
+    ⚠️ LET’S GAMBLE ⚠️
+  </h5>
+
+  <p style="
+    color:#cccccc;
+    line-height:1.7;
+    font-size:15px;
+  ">
+    This is the decisive phase of the event.<br>
+    Participants must take calculated risks by wagering their earned points
+    based on the challenges presented.
+  </p>
+
+</div>
+
+
+    <!-- REGISTER BUTTON -->
+    <a href="registration.html" class="register-btn">
+      Register Now
+    </a>
+
   </div>
+</div>
+
 </div>
 
 <!-- NON TECHNICAL EVENTS -->
 <div class="section">
   <h2>NON-TECHNICAL EVENTS</h2>
 
-  <div id="guessandgo" class="event-box">
-    <div class="event-title">Guess &amp; Go</div>
-    <div class="event-content">
-      Details will be updated soon.
-      <a href="registration.html" class="register-btn">
-  Register Now
-</a>
+ <div id="guessandgo" class="event-box">
+  <div class="event-title">GUESS & GO</div>
 
-    </div>
+  <div class="event-content">
+
+    <h4>Movie Connection & Entertainment Event</h4>
+
+    <p class="event-tagline">
+      Connect the clues.<br>
+      Catch the moment.
+    </p>
+
+    <p>
+      Guess & Go is a fun-filled non-technical event based on movie connections
+      and visual clues. The event is designed to test participants’ observation
+      skills, memory, and ability to connect seemingly unrelated hints.
+    </p>
+
+    <p>
+      Participants will encounter a variety of movie-related challenges that
+      require quick thinking, creativity, and teamwork, making the event lively
+      and engaging for everyone.
+    </p>
+
+    <h5>General Rules</h5>
+    <ul>
+      <li>Participation may be individual or in teams, as announced on the event day.</li>
+      <li>Clues and challenges will be based on movies and popular visual content.</li>
+      <li>Participants must respond within the given time limit.</li>
+      <li>Use of mobile phones or external assistance is not permitted.</li>
+      <li>Evaluation will be based on accuracy and response time.</li>
+      <li>The decision of the event coordinators will be final.</li>
+    </ul>
+
+    <!-- REGISTER BUTTON -->
+    <a href="registration.html" class="register-btn">
+      Register Now
+    </a>
+
   </div>
+</div>
+
 
  <div id="brocode" class="event-box">
   <div class="event-title">BROCODE</div>
@@ -386,16 +691,74 @@ h3{
 </div>
 
 
-  <div id="takeshicastle" class="event-box">
-    <div class="event-title">Takeshi Castle</div>
-    <div class="event-content">
-      Details will be updated soon.
-      <a href="registration.html" class="register-btn">
-  Register Now
-</a>
+ <!-- ================= TAKESHI'S CASTLE (SPECIAL EVENT) ================= -->
+<!-- ================= TAKESHI'S CASTLE (CINEMATIC SPECIAL EVENT) ================= -->
+<div id="takeshicastle" class="takeshi-wrapper">
+
+  <!-- OVERLAY LAYER -->
+  <div class="takeshi-overlay"></div>
+
+  <!-- CONTENT -->
+  <div class="takeshi-content">
+
+    <h2 class="takeshi-title">TAKESHI’S CASTLE</h2>
+    <p class="takeshi-subtitle">THIS IS NOT A NORMAL EVENT</p>
+
+    <div class="takeshi-grid">
+
+      <!-- LEFT -->
+      <div class="takeshi-text">
+        <p class="takeshi-line">
+          Not every challenge is meant to be understood.
+        </p>
+
+        <p>
+          Takeshi’s Castle is an experience where preparation fades,
+          instincts take over, and survival becomes the only objective.
+        </p>
+
+        <p class="takeshi-highlight">
+          It’s not about winning.<br>
+          It’s about survival.
+        </p>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="takeshi-mystery">
+        <p class="mystery-title">WHAT AWAITS</p>
+
+        <p class="mystery-text">
+          Unpredictability<br>
+          Physical & mental endurance<br>
+          No patterns. No guarantees.
+        </p>
+
+        <p class="mystery-footer">
+          ONLY THE STRONG ADAPT
+        </p>
+      </div>
 
     </div>
+
+    <!-- CTA -->
+    <div class="takeshi-cta">
+      <a href="registration.html" class="register-btn">
+        Enter at Your Own Risk
+      </a>
+    </div>
+
   </div>
+</div>
+
+  <!-- CTA -->
+  <div style="text-align:center; margin-top:50px;">
+    <a href="registration.html" class="register-btn">
+      Enter at Your Own Risk
+    </a>
+  </div>
+
+</div>
+
 
   <div style="text-align:center;">
     <a href="index.html" class="back-btn">← Back to Home</a>
@@ -426,6 +789,10 @@ function toggleMenu(){
 </div>
 
 </html>
+
+
+
+
 
 
 
